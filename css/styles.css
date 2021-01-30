@@ -10084,7 +10084,7 @@ header.masthead h1 {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   transition: background-color 0.5s ease;
 }
 #mainNav .navbar-brand {
