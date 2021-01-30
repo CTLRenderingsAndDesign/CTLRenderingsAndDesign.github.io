@@ -218,6 +218,10 @@ table {
   border-collapse: collapse;
 }
 
+formsize{
+  width: clamp(100px, 2vw, 800px);
+}
+
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -3984,7 +3988,7 @@ input[type=button].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 6vw, 2rem);
   line-height: inherit;
   white-space: nowrap;
 }
@@ -10022,6 +10026,55 @@ hr.light {
   padding: 8rem 0;
 }
 
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(69, 70, 80, 0.5) 0%, rgba(69, 70, 80, 0.5) 100%), url("../assets/img/new_masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead h1 {
+  font-size: clamp(1rem, 12vw, 10rem);
+  color:rgba(255, 255, 255, 1)
+}
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+}
+
+#mainMast.mast-scrolled h1{
+  color: rgba(0,0,0,0);
+}
+#mainMast.mast-scrolled p{
+  color: rgba(0,0,0,0);
+}
+#mainMast.mast-scrolled a{
+  color: rgba(0,0,0,0);
+}
+#mainMast.mast-scrolled .btn{
+  background-color: rgba(0,0,0,0);
+}
+@media (min-width: 992px){
+    #mainMast.mast-scrolled h1{
+    color: rgba(0,0,0,0);
+  }
+  #mainMast.mast-scrolled p{
+    color: rgba(0,0,0,0);
+  }
+  #mainMast.mast-scrolled a{
+    color: rgba(0,0,0,0);
+  }
+}
+
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
@@ -10081,38 +10134,6 @@ hr.light {
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
     color: #515E79;
-  }
-}
-
-header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(69, 70, 80, 0.5) 0%, rgba(69, 70, 80, 0.5) 100%), url("../assets/img/new_masthead.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-header.masthead h1 {
-  font-size: 2.25rem;
-}
-@media (min-width: 992px) {
-  header.masthead {
-    height: 100vh;
-    min-height: 40rem;
-    padding-top: 4.5rem;
-    padding-bottom: 0;
-  }
-  header.masthead p {
-    font-size: 1.15rem;
-  }
-  header.masthead h1 {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 1200px) {
-  header.masthead h1 {
-    font-size: 3.5rem;
   }
 }
 

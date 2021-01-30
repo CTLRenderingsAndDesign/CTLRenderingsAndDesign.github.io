@@ -35,8 +35,10 @@
     var navbarCollapse = function () {
         if ($("#mainNav").offset().top > 100) {
             $("#mainNav").addClass("navbar-scrolled");
+            $("#mainMast").addClass("mast-scrolled");
         } else {
             $("#mainNav").removeClass("navbar-scrolled");
+            $("#mainMast").removeClass("mast-scrolled");
         }
     };
     // Collapse now if page is not at top
