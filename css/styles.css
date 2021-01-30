@@ -10,6 +10,14 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+@font-face {
+  font-family: 'Southampton';
+  src: url('./Fonts/Southampton.woff2') format('woff2'),
+       url('./Fonts/Southampton.woff') format('woff'),
+       url('./Fonts/Southampton.ttf')  format('truetype');
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -393,6 +401,10 @@ h6, .h6 {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+.cursive {
+  font-family: 'Southampton', sans-serif;
 }
 
 .display-1 {
@@ -7704,7 +7716,7 @@ button.bg-dark:focus {
 
 .pb-3,
 .py-3 {
-  padding-bottom: 1rem !important;
+  padding-bottom: 0rem !important;
 }
 
 .pl-3,
@@ -10039,10 +10051,10 @@ hr.light {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0);
   }
   #mainNav .navbar-brand:hover {
-    color: #fff;
+    color: rgba(255, 255, 255, 0);
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.7);
@@ -10055,8 +10067,8 @@ hr.light {
     padding-right: 0;
   }
   #mainNav.navbar-scrolled {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: rgba(255, 255, 255, .6);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .25);
+    background-color: rgba(255, 255, 255, 0.7);
   }
   #mainNav.navbar-scrolled .navbar-brand {
     color: #212529;
