@@ -10053,32 +10053,39 @@ header.masthead h1 {
 
 #mainMast.mast-scrolled h1{
   color: rgba(0,0,0,0);
+  transition: color 0.5s ease;
 }
 #mainMast.mast-scrolled p{
   color: rgba(0,0,0,0);
+  transition: color 0.5s ease;
 }
 #mainMast.mast-scrolled a{
   color: rgba(0,0,0,0);
+  transition: color 0.5s ease;
 }
 #mainMast.mast-scrolled .btn{
   background-color: rgba(0,0,0,0);
+  transition: background-color 0.5s ease;
 }
 @media (min-width: 992px){
     #mainMast.mast-scrolled h1{
     color: rgba(0,0,0,0);
+    transition: color 0.5s ease;
   }
   #mainMast.mast-scrolled p{
     color: rgba(0,0,0,0);
+    transition: color 0.5s ease;
   }
   #mainMast.mast-scrolled a{
     color: rgba(0,0,0,0);
+    transition: color 0.5s ease;
   }
 }
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.5s ease;
 }
 #mainNav .navbar-brand {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
